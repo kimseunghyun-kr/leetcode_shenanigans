@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="" />
+    <list default="true" id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="my ans to some leetcode qns.">
+      <change afterPath="$PROJECT_DIR$/src/JumpGameVI1696.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MinCostClimbStairs746.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PaintHouse31487.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/longestWiggleSubsequence376.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaxAreaPieceOCakeAfterHorizVertCuts1465.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaxAreaPieceOCakeAfterHorizVertCuts1465.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ABvCe48vyFYiaLQgwgPiY82YlF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -13,21 +37,192 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Application.toRedo.JumpGameVI1696">
+    <configuration name="MaxAreaPieceOCakeAfterHorizVertCuts1465" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MaxAreaPieceOCakeAfterHorizVertCuts1465" />
+      <module name="leetcode_shenanigans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinMovesEqualArrEleII462" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MinMovesEqualArrEleII462" />
+      <module name="leetcode_shenanigans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="longestWiggleSubsequence376" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="longestWiggleSubsequence376" />
+      <module name="leetcode_shenanigans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="toRedo.JumpGameVI1696" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="toRedo.JumpGameVI1696" />
+      <module name="leetcode_shenanigans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="toRedo.PaintHouse31473" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="toRedo.PaintHouse31473" />
+      <module name="leetcode_shenanigans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.toRedo.JumpGameVI1696" />
+        <item itemvalue="Application.toRedo.PaintHouse31473" />
+        <item itemvalue="Application.longestWiggleSubsequence376" />
+        <item itemvalue="Application.MaxAreaPieceOCakeAfterHorizVertCuts1465" />
+        <item itemvalue="Application.MinMovesEqualArrEleII462" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="my ans to some leetcode qns." />
       <created>1654495667620</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654495667620</updated>
+      <workItem from="1656081893175" duration="3010000" />
+      <workItem from="1656152816375" duration="6540000" />
+      <workItem from="1656249423219" duration="2059000" />
+      <workItem from="1656335140142" duration="381000" />
+      <workItem from="1656408620252" duration="713000" />
+      <workItem from="1656421474642" duration="2003000" />
+      <workItem from="1656582147182" duration="4575000" />
+      <workItem from="1656594955963" duration="1737000" />
+      <workItem from="1656764794414" duration="2537000" />
+      <workItem from="1656847616426" duration="5589000" />
+      <workItem from="1657284054649" duration="5824000" />
+      <workItem from="1657358093466" duration="8022000" />
+      <workItem from="1657447585586" duration="755000" />
     </task>
+    <task id="LOCAL-00001" summary="my ans to some leetcode qns.">
+      <created>1656002922555</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656002922555</updated>
+    </task>
+    <task id="LOCAL-00002" summary="my ans to some leetcode qns.">
+      <created>1656765130189</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656765130189</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit of all leetcode ans i gave" />
+    <MESSAGE value="my ans to some leetcode qns." />
+    <option name="LAST_COMMIT_MESSAGE" value="my ans to some leetcode qns." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/NonDecreaseArray665.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MaximumPointsObtainCards1423.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MinDeltoMakeCharFreqUnique1647.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MinMovesEqualArrEleII462.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MinMovesEqualArrEleII462.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MaxAreaPieceOCakeAfterHorizVertCuts1465.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/longestWiggleSubsequence376.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/longestWiggleSubsequence376.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PaintHouse31487.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/JumpGameVI1696.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="12" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
