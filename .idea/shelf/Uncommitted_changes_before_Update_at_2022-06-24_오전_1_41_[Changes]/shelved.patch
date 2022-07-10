@@ -1,0 +1,378 @@
+Index: src/Roman_to_Int.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package PACKAGE_NAME;public class Roman_to_Int {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Roman_to_Int.java b/src/Roman_to_Int.java
+--- a/src/Roman_to_Int.java	(revision 37d2890cc1e3e1c79dab465f9d77c31722691908)
++++ b/src/Roman_to_Int.java	(date 1654533016011)
+@@ -1,2 +1,101 @@
+-package PACKAGE_NAME;public class Roman_to_Int {
++import java.util.*;
++public class Roman_to_Int {
++    HashMap<Character, Integer> romanSet = new HashMap<>();
++
++    public int romanToInt(String s) {
++        romanSet.put('I', 1);
++        romanSet.put('V', 5);
++        romanSet.put('X', 10);
++        romanSet.put('L', 50);
++        romanSet.put('C', 100);
++        romanSet.put('D', 500);
++        romanSet.put('M', 1000);
++        char[] chars = s.toCharArray();
++        int resultNum = 0;
++        Character prevChar = (char) 0;
++
++        for (Character c : chars) {
++            if (prevChar.equals((char) 0)) {
++                if (c.equals('I') || c.equals('X') || c.equals('C')) {
++                    prevChar = c;
++                } else {
++                    resultNum += romanSet.get(c);
++                }
++
++            } else {
++                if (prevChar.equals('I')) {
++                    if (c.equals('V')) {
++                        resultNum += 4;
++                    } else if (c.equals('X')) {
++                        resultNum += 9;
++                    } else {
++                        resultNum += romanSet.get(prevChar) + romanSet.get(c);
++                    }
++
++                    prevChar = (char) 0;
++                } else if (prevChar.equals('X')) {
++                    if (c.equals('L')) {
++                        resultNum += 40;
++                    } else if (c.equals('C')) {
++                        resultNum += 90;
++                    } else {
++                        if(c.equals('I')) {
++                            resultNum += romanSet.get(prevChar);
++                            prevChar = c;
++                        } else {
++                            resultNum += romanSet.get(prevChar) + romanSet.get(c);
++                        }
++                    }
++
++
++                    if(c.equals('I')) {
++                        prevChar = c;
++                    } else {
++                        prevChar = (char) 0;
++                    }
++
++                } else if (prevChar.equals('C')) {
++                    if (c.equals('D')) {
++                        resultNum += 400;
++                    } else if (c.equals('M')) {
++                        resultNum += 900;
++                    } else {
++                        if(c.equals('I') || c.equals('X')){
++                            resultNum += romanSet.get(prevChar);
++                        } else {
++                            resultNum += romanSet.get(prevChar) + romanSet.get(c);
++                        }
++
++                    }
++
++                    if(c.equals('I') || c.equals('X')) {
++                        prevChar = c;
++                    } else {
++                        prevChar = (char) 0;
++                    }
++
++                } else {
++
++                }
++
++            }
++
++
++        }
++
++        if (prevChar != (char) 0) {
++            resultNum += romanSet.get(prevChar);
++        }
++
++
++        return resultNum;
++
++    }
++
++
++    public static void main(String[] args) {
++        Roman_to_Int test = new Roman_to_Int();
++//        test.romanToInt("XIV");
++        System.out.println(test.romanToInt("XIV"));
++    }
+ }
+Index: leetcode_shenanigans.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src\" isTestSource=\"false\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/leetcode_shenanigans.iml b/leetcode_shenanigans.iml
+--- a/leetcode_shenanigans.iml	(revision 37d2890cc1e3e1c79dab465f9d77c31722691908)
++++ b/leetcode_shenanigans.iml	(date 1654505517799)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17" inherit-compiler-output="true">
+     <exclude-output />
+     <content url="file://$MODULE_DIR$">
+       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+Index: src/TwoWordsMinDeletion.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/TwoWordsMinDeletion.java b/src/TwoWordsMinDeletion.java
+new file mode 100644
+--- /dev/null	(date 1655305617662)
++++ b/src/TwoWordsMinDeletion.java	(date 1655305617662)
+@@ -0,0 +1,27 @@
++public class TwoWordsMinDeletion {
++
++//    to redo. lcs problem;
++
++    public int findMin(String word1, String word2) {
++        String longerWord = word1.length() > word2.length() ? word1 : word2;
++        String shorterWord = word1.length() < word2.length() ? word1 : word2;
++
++        int[] table = new int[longerWord.length()];
++        int[] newTable = new int[longerWord.length()];
++
++        for (int i = 0; i <= longerWord.length(); i++)
++            for (int j = 0; j <= shorterWord.length(); j++)
++
++                if (i == 0 || j == 0)
++                    table[j] = i + j;
++                else if (word1.charAt(i - 1) == word2.charAt(j - 1))
++                    dp[i][j] = dp[i - 1][j - 1];
++                else
++                    dp[i][j] = 1 + Math.min(dp[i - 1][j], dp[i][j - 1]);
++
++        return dp[word1.length()][word2.length()];
++
++
++    }
++
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ff4d778e-49c6-4d64-92ba-e1cf5242d5e9\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2ABvCe48vyFYiaLQgwgPiY82YlF\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\"\n  }\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <created>1654495667620</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1654495667620</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 37d2890cc1e3e1c79dab465f9d77c31722691908)
++++ b/.idea/workspace.xml	(date 1656002341993)
+@@ -1,11 +1,39 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="" />
++    <list default="true" id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/src/ClassesToTake630.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/LongestPalindromicSubstring.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/MinimumTotalTriangle.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Powxn.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/RickNMortyLadder.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/TwoWordsMinDeletion.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/codewars_proof.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/hamNums.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/leetcode_shenanigans.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode_shenanigans.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Roman_to_Int.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Roman_to_Int.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2ABvCe48vyFYiaLQgwgPiY82YlF" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+@@ -13,21 +41,150 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false"
+-  }
+-}]]></component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/aski-/java/leetcode_shenanigans/src/TwoWordsMinDeletion.java&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.excludes&quot;
++  }
++}</component>
++  <component name="RunManager" selected="Application.ClassesToTake630">
++    <configuration name="ClassesToTake630" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="ClassesToTake630" />
++      <module name="leetcode_shenanigans" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="LongestPalindromicSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="LongestPalindromicSubstring" />
++      <module name="leetcode_shenanigans" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="LongestStringChain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-18.0.1.1" />
++      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
++      <option name="MAIN_CLASS_NAME" value="LongestStringChain" />
++      <module name="leetcode_shenanigans" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="MinimumTotalTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="MinimumTotalTriangle" />
++      <module name="leetcode_shenanigans" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="RickNMortyLadder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="RickNMortyLadder" />
++      <module name="leetcode_shenanigans" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.ClassesToTake630" />
++        <item itemvalue="Application.RickNMortyLadder" />
++        <item itemvalue="Application.LongestPalindromicSubstring" />
++        <item itemvalue="Application.LongestStringChain" />
++        <item itemvalue="Application.MinimumTotalTriangle" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
++      <changelist id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="" />
+       <created>1654495667620</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1654495667620</updated>
++      <workItem from="1654495670598" duration="3709000" />
++      <workItem from="1654531176615" duration="3139000" />
++      <workItem from="1654611576271" duration="2078000" />
++      <workItem from="1654955281148" duration="2301000" />
++      <workItem from="1655106692726" duration="4572000" />
++      <workItem from="1655212156189" duration="8371000" />
++      <workItem from="1655311292290" duration="16000" />
++      <workItem from="1655385117131" duration="5705000" />
++      <workItem from="1655731987027" duration="3817000" />
++      <workItem from="1655904617959" duration="3145000" />
++      <workItem from="1655988454964" duration="4458000" />
+     </task>
+     <servers />
+   </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/Roman_to_Int.java</url>
++          <line>25</line>
++          <option name="timeStamp" value="4" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/Roman_to_Int.java</url>
++          <line>97</line>
++          <option name="timeStamp" value="8" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/hamNums.java</url>
++          <line>31</line>
++          <option name="timeStamp" value="11" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/Powxn.java</url>
++          <line>36</line>
++          <option name="timeStamp" value="17" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/MinimumTotalTriangle.java</url>
++          <line>90</line>
++          <option name="timeStamp" value="18" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/LongestStringChain.java</url>
++          <line>93</line>
++          <option name="timeStamp" value="20" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/RickNMortyLadder.java</url>
++          <line>43</line>
++          <option name="timeStamp" value="21" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/ClassesToTake630.java</url>
++          <line>41</line>
++          <option name="timeStamp" value="22" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
++  </component>
+ </project>
+\ No newline at end of file
