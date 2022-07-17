@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="my ans to some leetcode qns.">
-      <change afterPath="$PROJECT_DIR$/src/JumpGameVI1696.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MinCostClimbStairs746.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaintHouse31487.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/longestWiggleSubsequence376.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="my ans to some leetcode qns.&#10;unable to do 1696 and 1473">
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindowMax239.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/toRedo/OutOfBoundaryPath576.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MaxAreaPieceOCakeAfterHorizVertCuts1465.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaxAreaPieceOCakeAfterHorizVertCuts1465.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinTreeLOTraversal102.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinTreeLOTraversal102.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LCS128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCS128.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toRedo/MatchSticksToSquares473.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRedo/MatchSticksToSquares473.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +48,22 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.toRedo.JumpGameVI1696">
-    <configuration name="MaxAreaPieceOCakeAfterHorizVertCuts1465" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MaxAreaPieceOCakeAfterHorizVertCuts1465" />
+  <component name="RunManager" selected="Application.OutOfBoundaryPath576">
+    <configuration name="OutOfBoundaryPath576" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="toRedo.OutOfBoundaryPath576" />
       <module name="leetcode_shenanigans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="toRedo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinMovesEqualArrEleII462" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MinMovesEqualArrEleII462" />
+    <configuration name="SlidingWindowMax239" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SlidingWindowMax239" />
       <module name="leetcode_shenanigans" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,11 +92,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OutOfBoundaryPath576" />
+        <item itemvalue="Application.SlidingWindowMax239" />
         <item itemvalue="Application.toRedo.JumpGameVI1696" />
         <item itemvalue="Application.toRedo.PaintHouse31473" />
         <item itemvalue="Application.longestWiggleSubsequence376" />
-        <item itemvalue="Application.MaxAreaPieceOCakeAfterHorizVertCuts1465" />
-        <item itemvalue="Application.MinMovesEqualArrEleII462" />
       </list>
     </recent_temporary>
   </component>
@@ -116,6 +121,9 @@
       <workItem from="1657284054649" duration="5824000" />
       <workItem from="1657358093466" duration="8022000" />
       <workItem from="1657447585586" duration="755000" />
+      <workItem from="1657448365410" duration="321000" />
+      <workItem from="1657732041647" duration="716000" />
+      <workItem from="1657973397004" duration="2830000" />
     </task>
     <task id="LOCAL-00001" summary="my ans to some leetcode qns.">
       <created>1656002922555</created>
@@ -131,7 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656765130189</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="my ans to some leetcode qns.&#10;unable to do 1696 and 1473">
+      <created>1657448611961</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657448611961</updated>
+    </task>
+    <task id="LOCAL-00004" summary="my ans to some leetcode qns.&#10;unable to do 1696 and 1473">
+      <created>1657448642102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657448642102</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +185,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit of all leetcode ans i gave" />
     <MESSAGE value="my ans to some leetcode qns." />
-    <option name="LAST_COMMIT_MESSAGE" value="my ans to some leetcode qns." />
+    <MESSAGE value="my ans to some leetcode qns.&#10;unable to do 1696 and 1473" />
+    <option name="LAST_COMMIT_MESSAGE" value="my ans to some leetcode qns.&#10;unable to do 1696 and 1473" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -209,14 +232,24 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/PaintHouse31487.java</url>
+          <url>file://$PROJECT_DIR$/src/toRedo/PaintHouse31473.java</url>
           <line>101</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JumpGameVI1696.java</url>
+          <url>file://$PROJECT_DIR$/src/toRedo/JumpGameVI1696.java</url>
           <line>55</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindowMax239.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/toRedo/OutOfBoundaryPath576.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />
@@ -224,5 +257,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="deque" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

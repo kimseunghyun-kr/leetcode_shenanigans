@@ -1,3 +1,9 @@
+package toRedo;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.IntStream;
+
 class MatchSticksToSquares473 {
 
     

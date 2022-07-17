@@ -3,7 +3,7 @@
 
 import java.util.HashMap;
 import java.util.HashSet;
-public class Main
+public class LCS128
 {
     // lets do key , parent
      HashMap<Integer, Integer> arrNumLengthMap = new HashMap<>();
@@ -58,7 +58,7 @@ public class Main
  
     
 	public static void main(String[] args) {
-		Main test = new Main();
+		LCS128 test = new LCS128();
 		int[] testArr = {0};
 		int ans = test.longestConsecutive(testArr);
 		System.out.println(ans);
