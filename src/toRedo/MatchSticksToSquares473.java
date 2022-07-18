@@ -1,4 +1,4 @@
-package toRedo;
+package leetcode_shenanigans.src.toRedo;
 
 import java.util.Arrays;
 import java.util.Collections;
