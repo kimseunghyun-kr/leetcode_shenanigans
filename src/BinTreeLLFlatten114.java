@@ -6,31 +6,31 @@ import DefaultCode.*;
 class BinTreeLLFlatten114 {
 
 
-    // public void flatten(TreeNode root) {
-    //     TreeNode curr = root;
+    public void flattenNsquare(TreeNode root) {
+        TreeNode curr = root;
 
-    //     if(curr == null) {
-    //         return;
-    //     }
+        if(curr == null) {
+            return;
+        }
 
-    //     TreeNode OGLeft = curr.left;
-    //     TreeNode OGRight = curr.right;
+        TreeNode OGLeft = curr.left;
+        TreeNode OGRight = curr.right;
 
-    //     curr.left = null;
-    //     flatten(OGLeft);
-    //     curr.right = OGLeft;
+        curr.left = null;
+        flattenNsquare(OGLeft);
+        curr.right = OGLeft;
 
-    //     while(curr.right != null) {
-    //         curr = curr.right;
-    //     }
+        while(curr.right != null) {
+            curr = curr.right;
+        }
 
-    //     flatten(OGRight);
+        flattenNsquare(OGRight);
         
-    //     curr.left = null;
-    //     curr.right = OGRight;
+        curr.left = null;
+        curr.right = OGRight;
 
         
-    // }
+    }
 
 
 ArrayList<TreeNode> ans;
