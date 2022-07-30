@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff4d778e-49c6-4d64-92ba-e1cf5242d5e9" name="Changes" comment="my ans to some leetcode qns.&#10;unable to do 1696 and 1473">
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowMax239.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/toRedo/OutOfBoundaryPath576.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/toRedo/COSNAS315.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/toRedo/KInvPairArray629.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinTreeLOTraversal102.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinTreeLOTraversal102.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LCS128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCS128.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toRedo/MatchSticksToSquares473.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toRedo/MatchSticksToSquares473.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/toRedo/KInvPairArray629.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -41,6 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aski-/java/runningArea&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -124,6 +125,11 @@
       <workItem from="1657448365410" duration="321000" />
       <workItem from="1657732041647" duration="716000" />
       <workItem from="1657973397004" duration="2830000" />
+      <workItem from="1658054521556" duration="6214000" />
+      <workItem from="1658558581768" duration="762000" />
+      <workItem from="1658585272056" duration="4774000" />
+      <workItem from="1658659594584" duration="612000" />
+      <workItem from="1659189773209" duration="579000" />
     </task>
     <task id="LOCAL-00001" summary="my ans to some leetcode qns.">
       <created>1656002922555</created>
@@ -153,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657448642102</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="my ans to some leetcode qns.&#10;unable to do 1696 and 1473">
+      <created>1658054547603</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658054547604</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
