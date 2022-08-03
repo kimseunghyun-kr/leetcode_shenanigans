@@ -2,6 +2,8 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class kthSmallestNumNested378 {
+    
+    // to redo for the 2d binsearch
 
     public int kthSmallest(int[][] matrix, int k) {
     //2d binsearch -> exercept from meganLee https://leetcode.com/meganlee/
