@@ -1,10 +1,12 @@
+package toRedo;
+
 class Sudokuish1074 {
     public int numSubmatrixSumTarget(int[][] matrix, int target) {
         int[][] prefixSummedMatrix = matrix;
         for(int i = 0; i< matrix.length ; i++) {
             for(int j = 0 ; j< matrix[0].length ; j++) {
                 if(j == 0) {
-                    prefixSummedMatrix[i][j] = matrix[i][j]
+                    prefixSummedMatrix[i][j] = matrix[i][j];
                 } else {
                     prefixSummedMatrix[i][j] = prefixSummedMatrix[i][j-1] + matrix[i][j];
                 }
@@ -43,6 +45,6 @@ class Sudokuish1074 {
 // https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/discuss/803353/Java-Solution-with-Detailed-Explanation
 
 
-0 1 0    -> 0 1 1
--1 1 0   -> -1 0 0
-1 5 -7   -> 1 6 -1
+//0 1 0    -> 0 1 1
+//-1 1 0   -> -1 0 0
+//1 5 -7   -> 1 6 -1
